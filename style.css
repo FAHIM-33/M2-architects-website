@@ -56,6 +56,7 @@ header{
     
 }
 header .logo{
+    min-width: fit-content;
     color: #131313;
     font-size: 2.8125rem;
     font-weight: 700;
@@ -132,6 +133,51 @@ header figure{
 .komola{
     color: #FF900E;
 }
+/* -------------------------PAIN-----------------------  */
+.pain-container{
+    margin-top: 7rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-pain{
+    width: 40%;
+}
+.pain-head-box{
+    width: 100%;
+    margin-top: 1rem;
+}
+.pain-box{
+    width: 90%;
+    margin: 5rem auto;
+}
+.pain-box h3{
+    color:#131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.right-pain{
+    width: 50%;
+}
+
+.years-button{
+    margin: -3rem 0 0 4rem;
+    
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    padding: 2.8rem;
+    background-color: #FF900E;
+    /* width: 21.375rem; */
+    color: white;
+
+
+
+}
+.years-button span{
+    font-size: 2rem;
+}
 
 
 
@@ -145,7 +191,7 @@ header figure{
     header .logo{
         font-size: 2rem;
     }
-    header > article, header > figure,.feature,.feature-left,.feature-right{
+    header > article, header > figure,.feature,.feature-left,.feature-right,.pain-container,.left-pain,.right-pain{
         width: 90%;
         /* border: 1px solid red; */
     }
@@ -161,7 +207,11 @@ header figure{
     .feature-right{
         margin-bottom: 3rem;
     }
+    .pain-container{
+        flex-direction: column;
+    }
 }
+
 @media screen and (min-width: 577px) and (max-width: 992px) {
     header > nav{
         width: auto;
@@ -170,10 +220,12 @@ header figure{
     header .logo{
         font-size: 2rem;
     }
-    header > article, header > figure{
+    header > article, header > figure,.pain-container,.left-pain,.right-pain{
         width: 90%;
     }
-
+    .pain-container{
+        flex-direction: column;
+    }
 }
 @media screen and (min-width:1441px) {
     body{
