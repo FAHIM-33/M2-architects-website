@@ -175,3 +175,8 @@ header figure{
     }
 
 }
+@media screen and (min-width:1441px) {
+    body{
+        margin: 0 auto;
+    }
+}
