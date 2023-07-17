@@ -178,6 +178,32 @@ header figure{
 .years-button span{
     font-size: 2rem;
 }
+/* -------------------Facts------------------ */
+.facts-down{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* justify-content: space-evenly; */
+    /* gap: 7.7rem; */
+    gap: 8%;
+    padding: 5rem
+}
+.facts-box{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding: 3rem;
+}
+.facts-box h3{
+    margin: 0.7rem;
+    color:#424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+
+}
+.facts-down img{
+    width: 35%;
+    margin: 0 auto;
+}
 
 
 
@@ -191,11 +217,11 @@ header figure{
     header .logo{
         font-size: 2rem;
     }
-    header > article, header > figure,.feature,.feature-left,.feature-right,.pain-container,.left-pain,.right-pain{
+    header > article, header > figure,.feature,.feature-left,.feature-right,.pain-container,.left-pain,.right-pain,.facts,.facts>*{
         width: 90%;
         /* border: 1px solid red; */
     }
-    /* --------------Feature------------- */
+
     .feature{
         flex-direction: column;
     }
@@ -210,6 +236,12 @@ header figure{
     .pain-container{
         flex-direction: column;
     }
+
+    
+    .facts-down{
+        grid-template-columns: repeat(2,1fr);
+        /* background-color: red; */
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -220,13 +252,31 @@ header figure{
     header .logo{
         font-size: 2rem;
     }
-    header > article, header > figure,.pain-container,.left-pain,.right-pain{
+    header > article, header > figure,.feature,.feature>*,.pain-container,.pain-container>*,.facts{
         width: 90%;
+    }
+
+    .feature{
+        flex-direction: column;
+    }
+    .feature-left{
+        margin-bottom: 3rem;
+        order: 1;
+        /* margin-bottom: 3rem; */
+    }
+    .feature-right{
+        margin-bottom: 3rem;
     }
     .pain-container{
         flex-direction: column;
     }
+
+    .facts-down{
+        grid-template-columns: repeat(2,1fr);
+        /* background-color: red; */
+    }
 }
+
 @media screen and (min-width:1441px) {
     body{
         margin: 0 auto;
