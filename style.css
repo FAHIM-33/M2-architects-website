@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Work+Sans:wght@300;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Work Sans;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+
+}
+/* -----------------shared class ----------------- */
+.text-grey{
+    color: #727272;
+    text-align: center;
+    line-height: 1.625rem; /* 162.5% */
+}
+body{
+    max-width: 1920px;
+    min-width: min-content;
+}
+img{
+    width: 100%;
+}
+.btn-main{
+    width: 11.25rem;
+    height: 4rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    background: #FF900E;    
+    color: white;
+    font-size: 1.25rem;
+    padding: 1.2rem;
+}
+.section-title{
+    color:#131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.plain-text{
+    color:#727272;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.centered-section{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------------HEader --------------------- */
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding-bottom: 3rem;
+    margin-bottom: 5rem;
+    
+}
+header .logo{
+    color: #131313;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    
+}
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding: 3.12rem;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    /* border: 1px solid red; */
+    /* width: 29.81rem; */
+    width: 31%;
+    min-width: min-content;
+    color: #424242;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+header > article{
+    /* border: 1px solid red; */
+    min-width: min-content;
+    width: 44.9%;
+    margin: 6rem auto 2rem;
+    text-align: center;
+}
+header > article h1{
+    /* border: 1px solid green; */
+    color:#131313;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+header figure{
+    margin-top: 3.1rem;
+    
+}
+/* ____________________MAIN___________________________   */
+/* ---------------Features Section ------------------  */
+.feature{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.feature-left{
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    /* border: 1px solid green; */
+}
+
+.feature-right{
+    width: 40%;
+    /* border: 1px solid red; */
+}
+.feature-right > p{
+    margin: 1.5rem auto 2rem;
+}
+.sai{
+    color:#727272;
+    font-weight: 500;
+}
+.komola{
+    color: #FF900E;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    header{
+    }
+    header > nav{
+        width: auto;
+        padding: 10px;
+    }
+    header .logo{
+        font-size: 2rem;
+    }
+    header > article, header > figure,.feature,.feature-left,.feature-right{
+        width: 90%;
+        /* border: 1px solid red; */
+    }
+    /* --------------Feature------------- */
+    .feature{
+        flex-direction: column;
+    }
+    .feature-left{
+        margin-bottom: 3rem;
+        order: 1;
+        /* margin-bottom: 3rem; */
+    }
+    .feature-right{
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    header > nav{
+        width: auto;
+        padding: 10px;
+    }
+    header .logo{
+        font-size: 2rem;
+    }
+    header > article, header > figure{
+        width: 90%;
+    }
+
+}
