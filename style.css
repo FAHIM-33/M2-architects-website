@@ -179,9 +179,16 @@ header figure{
     font-size: 2rem;
 }
 /* -------------------Facts------------------ */
+.facts{
+    margin: 5rem auto 5rem;
+}
+.facts-up{
+    margin-bottom: 3rem;
+}
+
 .facts-down{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,25%);
     /* justify-content: space-evenly; */
     /* gap: 7.7rem; */
     gap: 8%;
@@ -194,6 +201,7 @@ header figure{
     padding: 3rem;
 }
 .facts-box h3{
+    min-width: min-content;
     margin: 0.7rem;
     color:#424242;
     font-size: 2.8rem;
@@ -237,9 +245,15 @@ header figure{
         flex-direction: column;
     }
 
-    
+    .facts{
+        /* border: 1px solid green; */
+    }
     .facts-down{
-        grid-template-columns: repeat(2,1fr);
+        /* border: 2px solid red; */
+        padding: 0;
+        text-align: center;
+        /* margin: 4rem, auto; */
+        grid-template-columns: repeat(2,50%);
         /* background-color: red; */
     }
 }
@@ -273,6 +287,14 @@ header figure{
 
     .facts-down{
         grid-template-columns: repeat(2,1fr);
+        /* background-color: red; */
+    }
+    .facts-down{
+        /* border: 2px solid red; */
+        padding: 0;
+        text-align: center;
+        /* margin: 4rem, auto; */
+        grid-template-columns: repeat(2,50%);
         /* background-color: red; */
     }
 }
